@@ -55,7 +55,7 @@ html {
 .login {
   height: 100%;
   min-height: 100%;
-  background-image: url(../img/login-bg.jpg);
+  background-image: url(../img/bg.png);
   background-size: cover;
   background-position: 50%;
   position: relative;
@@ -63,11 +63,21 @@ html {
 
 .login .layui-card {
   position: absolute;
-  right: 160px;
+  right: 42%;
   top: 50%;
   -webkit-transform: translateY(-60%);
   transform: translateY(-60%);
   width: 360px;
+}
+.login .layui-card .layui-card-header{
+  position: relative;
+  height: 42px;
+  line-height: 42px;
+  padding: 5px 80px;
+  border-bottom: 1px solid #f6f6f6;
+  color: #333;
+  border-radius: 2px 2px 0 0;
+  font-size: 20px;
 }
 
 .login .layui-form-label {

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>欢迎使用 {{ env('APP_NAME') }} 后台管理系统</title>
+    <title>{{ env('APP_NAME') }}后台管理系统</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -16,7 +16,7 @@
     <div class="login">
         <div class="layui-card">
             <div class="layui-card-header">
-                欢迎使用 <b style="font-family:Monaco,Consolas">{{ env('APP_NAME') }}</b> 后台管理系统
+                <b style="font-family:Monaco,Consolas">{{ env('APP_NAME') }}</b> 后台管理系统
             </div>
             <div class="layui-card-body">
                 <form class="layui-form  layui-form-pane">
@@ -45,7 +45,6 @@
                         <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="*">登 录</button>
                     </div>
                 </form>
-                <p>- <b style="font-family:Monaco,Consolas;font-weight:300"> LeaCMF</b>  后台开发框架 -</p>
             </div>
         </div>
     </div>
