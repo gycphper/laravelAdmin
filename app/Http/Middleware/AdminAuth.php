@@ -52,17 +52,22 @@ class AdminAuth
             if ($request->isMethod('ajax')) {
                 return Y::error('登录已过期，请重新登录');
             } else {
-                return redirect(route('login'));
+                return Y::error('没有相关权限');
             }
         }
-
         //验证通过
         return $next($request);
     }
 
     protected $except = [
         'admin/login',
-        'admin/logout'
+        'admin/logout',
+        'admin/upload/face',
+        'admin/upload/video',
+        'admin/upload/audio',
+        'admin/upload/document',
+        'admin/upload/attach',
+        'admin/flush',
     ];
 
 }

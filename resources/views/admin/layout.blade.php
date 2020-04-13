@@ -28,22 +28,15 @@
                 </a>
             </li>
             <li class="layui-nav-item" lay-unselect>
-                <a href="javascript:;" id="refresh" title="刷新数据">
-                    <i class="layui-icon layui-icon-refresh"></i>
+                <a href="{{route('flush')}}" class="ajax-get" title="清空缓存">
+                    <i class="fa fa-magic">清空缓存</i>
                 </a>
             </li>
-            @role('super admin')
-            <li class="layui-nav-item" lay-unselect>
-                <a href="{{route('flush')}}" class="ajax-post" title="清空缓存">
-                    <i class="fa fa-magic"></i>
-                </a>
-            </li>
-            @endrole
         </ul>
         <ul class="layui-nav layui-layout-right">
             @role('super admin')
             <li class="layui-nav-item" lay-unselect>
-                <a href="app/message/" layadmin-event="message">
+                <a href="javascript:;" layadmin-event="message">
                     <i class="layui-icon layui-icon-notice"></i>
                     <span class="layui-badge-dot"></span>
                 </a>
