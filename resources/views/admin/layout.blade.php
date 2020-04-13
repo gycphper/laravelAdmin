@@ -105,7 +105,7 @@
         </div>
         <div class="main-footer">
             <!-- 底部固定区域 -->
-            Copyright © 2016-{{ date('Y') }} 基于 LeaCMF 后台管理系统. All rights reserved.
+            Copyright © 2016-{{ date('Y') }} 后台管理系统. All rights reserved.
         </div>
     </div>
 </div>
